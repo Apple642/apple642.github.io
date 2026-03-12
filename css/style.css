@@ -1,22 +1,16 @@
-
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 body {
-  background-color: ghostwhite;
+    background-color: black;
+    color: #555;
+    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
 }
-
-h1 {
-  color: cadetblue;
-  text-align: revert;
-}
-
-p {
-  color: black;
-  text-align: center;
-  font-family: shape-inside;
-  font-size: 20px;
+.note {
+  width: 600px;
+  margin: 30px auto;
 }
 
 .element {   
-  border-style: solid;
   background-color:  #f1c40f; 
   color: black;
   width: 500px; 
@@ -28,13 +22,7 @@ p {
   transition: all 3s ease; 
   -webkit-clip-path: polygon(250px 0, 350px 170px, 500px 180px, 380px 320px, 450px 500px, 250px 420px, 50px 500px, 120px 320px, 0px 180px, 150px 170px );
 } 
-
-
-
-
-/*
-#.lead img {
-  width: 100px;
-  border-bottom-right-radius: blue;
-}
-
+.element:hover{ 
+   shape-inside: polygon(250px 0, 500px 0, 500px 180px, 500px 320px, 500px 500px, 250px 500px, 0 500px, 0 320px, 0 180px, 0 0);
+  -webkit-clip-path: polygon(250px 0, 500px 0, 500px 180px, 500px 320px, 500px 500px, 250px 500px, 0 500px, 0 320px, 0 180px, 0 0);
+} 
